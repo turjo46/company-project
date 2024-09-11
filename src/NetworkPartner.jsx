@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const TechSolutions = () => {
+
+const NetworkPartner = () => {
   const [open, setOpen] = useState(null);
 
   const toggle = (index) => {
@@ -12,36 +13,30 @@ const TechSolutions = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Side */}
         <div>
-          <h2 className="text-6xl text-black font-bold mb-10">Tech Solutions</h2>
-          <p className="text-lg font-semibold  text-black mb-10">
-          Our Digital Transformation Team uses bleeding-edge technology to enable you to nurture customer relationships at every stage. We create integrated digital ecosystems covering web, social & paid media, CRM, ERP, search, e-commerce and other channels.
+          <h2 className="text-6xl text-black font-bold mb-10">Schbang Network & Partnerships</h2>
+          <p className="text-xl font-semibold  text-black mb-10">
+          Our partner companies like SchbangQ, 88GB, Spek Digital and Django Digital cater to unique market needs.
 
-          </p>
-          <p className="text-lg font-semibold  text-black mb-10">
-          Our custom-made platforms and  solutions help you attract, retain and engage every prospect with a personalized touch.
-          </p>
-          <p className="font-bold text-xl text-black mb-10">
-          Proudly innovating with leading technology leaders in the market...
-
+          
 
 
           </p>
           <div className="mt-6 grid grid-cols-3 gap-4 mb-10">
             {/* Tech Logos */}
             <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/646742443d82451ca503eca0_1.webp"
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/647162e2d67da0f056956dde_download-removebg-preview.webp"
               alt="shopify partner"
               className="h-24 object-contain mb-12"
             />
             <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/646742411d41344dd4fe9e4f_6.webp"
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6464805d5d0d2c49f4b01339_5%20(1)-min.webp"
               alt="Google partner"
               className="h-24 object-contain"
             />
             <img
-              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6477bd521f0ee28256a9fcd2_HubSpot-certified-partner-2-p-500.webp"
+              src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/6464805d51fa16783155179c_4%20(1)-min.webp"
               alt="hubspot"
-              className="h-16 object-contain"
+              className="h-24 object-contain"
             />
             <img
               src="https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/64674240ce6535840fe75043_3.webp"
@@ -77,21 +72,23 @@ const TechSolutions = () => {
         </div>
 
         {/* Right Side - Accordion */}
-        <div className="space-y-4">
+        <div className=" space-y-4">
           {[
-            'Custom Web Development',
-            "Web Personalization",
-            "UI/Ux",
-            "Search Engine Optimization",
-            "CRM & ERP Solutions",
-            "E-Commerce",
-            "Email Marketing",
-            "Marketing Automation",
-            "Chatbots",
+           ' SchbangQ',
+
+           ' SPEK Digital',
+            
+            '88GB',
+            
+            'Django Digital',
+            
+            'ARtmeTech',
+            
+            'Schbang MMaximize',
           ].map((item, index) => (
             <div key={index} className="collapse-arrow border-b border-gray-300">
             <button
-              className=" collapse-title w-full text-left py-4 font-semibold text-black "
+              className=" collapse-title w-full text-left py-4 font-bold text-black "
               
               onClick={() => toggle(index)}
             >
@@ -99,10 +96,15 @@ const TechSolutions = () => {
             </button>
 
             {open === index && (
-              <div className="  py-2 text-black">
+              <div className="  py-2 text-black ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac neque at dolor auctor fringilla.
+                <p className="py-5 text-lg font-bold">
+                View their work.
+                </p>
               </div>
+              
             )}
+
           </div>
           ))}
         </div>
@@ -111,4 +113,4 @@ const TechSolutions = () => {
   );
 };
 
-export default TechSolutions;
+export default NetworkPartner;

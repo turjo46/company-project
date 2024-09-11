@@ -12,7 +12,9 @@ const BrandSolutions = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Side */}
         <div>
-          <h2 className="text-6xl text-black font-bold mb-10">Brand Solutions</h2>
+          <h2 className="text-6xl text-black font-bold mb-10">
+            Brand Solutions
+          </h2>
           <p className="text-lg font-semibold  text-black mb-10">
             Our Strategists, Designers, Video Editors and Animators provide you
             with holistic solutions to grow your digital presence and achieve
@@ -85,21 +87,26 @@ const BrandSolutions = () => {
             "Print, OOH, Mainline Advertising",
             "New Brand Launch and Rebranding",
           ].map((item, index) => (
-            <div key={index} className="collapse-arrow border-b border-gray-300">
-            <button
-              className=" collapse-title w-full text-left py-4 font-semibold text-black "
-              
-              onClick={() => toggle(index)}
+            <div
+              key={index}
+              className="collapse-arrow border-b border-gray-300"
             >
-              {item}
-            </button>
+              <button
+                className=" collapse-title w-full text-left py-4 font-semibold text-black "
+                onClick={() => toggle(index)}
+              >
+                {item}
+              </button>
 
-            {open === index && (
-              <div className=" collapse-content py-2 text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac neque at dolor auctor fringilla.
-              </div>
-            )}
-          </div>
+              {open === index && (
+                <div className="py-2 text-black transition-all duration-300">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris ac neque at dolor auctor fringilla.
+                  </p>
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </div>

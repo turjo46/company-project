@@ -65,17 +65,15 @@ const Card = ({ imageUrl, title, description }) => (
   </div>
 );
 
-const DynamicCard = () => {
+const DesignCard = () => {
   return (
-    <div className="p-16">
-      <div className="container mx-auto px-16 ">
-      <div className="bg-white text-center py-16">
-      <h1 className="text-3xl font-semibold tracking-tighter text-black ">
-      Have you got what it takes to #CreateASchbang?
+    <div className=" bg-white ">
+      <div className=" px-10 ">
+      <div className="bg-white  py-10">
+      <h1 className="text-2xl font-bold tracking-tighter text-black px-20">
+      Our Principles
       </h1>
-      <p className="text-xl text-gray-700 mb-5">
-      Check out our core principles. If they align with your values, do apply..
-      </p>
+      
     
     </div>
         <div className="grid grid-cols-1 md:grid-cols-3">
@@ -93,4 +91,4 @@ const DynamicCard = () => {
   );
 };
 
-export default DynamicCard;
+export default DesignCard;

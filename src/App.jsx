@@ -1,3 +1,4 @@
+import About from "./pages/About";
 import Case from "./pages/Case";
 import Home from "./pages/Home";
 import Media from "./pages/Media";
@@ -13,6 +14,8 @@ function App() {
     <Tech> </Tech>
     <Media></Media>
     <Case></Case>
+    <About></About>
+    
     </>
   )
 }

@@ -1,5 +1,6 @@
 import BrandSolutions from "../Brand/BrandSolutions";
 import CardGrid from "../CardGrid";
+
 import Navbar from "../shared/Navbar/Navbar";
 
 
@@ -9,6 +10,7 @@ const Home = () => {
         <Navbar> </Navbar>
         <BrandSolutions></BrandSolutions>
         <CardGrid/>
+        
     </div>
   )
 }
